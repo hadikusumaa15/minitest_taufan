@@ -1,0 +1,32 @@
+<%= form_with(model: wakanda, local: true) do |form| %>
+  <% if wakanda.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wakanda.errors.count, "error") %> prohibited this wakanda from being saved:</h2>
+
+      <ul>
+      <% wakanda.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :wakanda_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :wakanda_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :released_on %>
+    <%= form.date_select :released_on, id: :wakanda_released_on %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

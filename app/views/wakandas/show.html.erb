@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @wakanda.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @wakanda.price %>
+</p>
+
+<p>
+  <strong>Released on:</strong>
+  <%= @wakanda.released_on %>
+</p>
+
+<%= link_to 'Edit', edit_wakanda_path(@wakanda) %> |
+<%= link_to 'Back', wakandas_path %>

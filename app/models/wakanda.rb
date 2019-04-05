@@ -1,0 +1,2 @@
+class Wakanda < ApplicationRecord
+end
