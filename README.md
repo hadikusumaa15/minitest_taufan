@@ -24,3 +24,16 @@ Things you may want to cover:
 * ...
 
 * READ THIS DOCUMENTATION ! file:///media/taufan/Data/LEARNING%20VIDEOS/RAILS/railscast/%23327%20MiniTest%20with%20Rails%20(pro)%20-%20RailsCasts.html
+
+folder penting !
+    /config/application.rb 
+    /test/minitest_helper.rb 
+    /test/model/product_test.rb 
+    /app/models/product.rb 
+    /lib/tasks/minitest.rake 
+
+command penting !
+    ruby -Itest test/models/product_test.rb
+
+    rake db:test:prepare
+    buka config/database.yml
